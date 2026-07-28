@@ -1,0 +1,169 @@
+:root {
+  --teal: #0b7285;
+  --teal-light: #e0f3f5;
+  --cherry: #d20a2e;
+  --bg: #f5f7fa;
+  --text: #1a1a1a;
+  --text-secondary: #666;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.screen {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--text-secondary);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.field input {
+  font-size: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  outline: none;
+  font-family: inherit;
+}
+
+.field input:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(11, 114, 133, 0.1);
+}
+
+.btn-primary {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--teal);
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  opacity: 0.85;
+}
+
+.bottle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.bottle-outer {
+  width: 120px;
+  height: 200px;
+  border-radius: 24px;
+  border: 3px solid var(--teal);
+  background: var(--teal-light);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bottle-fill {
+  width: 100%;
+  background: var(--teal);
+  transition: height 0.5s ease-out;
+}
+
+.bottle-label {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.cups-row {
+  text-align: center;
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.round-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--teal);
+  cursor: pointer;
+}
+
+.round-btn-primary {
+  background: var(--teal);
+  color: #fff;
+  border: none;
+}
+
+.round-btn:active {
+  opacity: 0.85;
+}
+
+.celebration {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cherry);
+}
